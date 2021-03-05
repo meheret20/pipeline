@@ -11,5 +11,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener doc:name="Listener" doc:id="baab7e7f-6673-437e-b7b4-583d632a31ad" config-ref="HTTP_Listener_config" path="/pipeln"/>
 		<logger level="INFO" doc:name="Logger" doc:id="ae4c35ac-a4fe-4501-9a7f-aa19ad6182e4" message="#['This is the first pipeline']"/>
 		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="9b67fcf9-0bb7-4185-a10f-aa863dad2108" />
+		<logger level="INFO" doc:name="Logger" doc:id="e3e09e9b-c7c3-4d88-bffb-12f9eff368be" message="This is the last payload:  #[payload]"/>
 	</flow>
 </mule>
